@@ -55,7 +55,10 @@ Instead of selecting the most appropriate operation at the first layer, the DART
 
 Suppose the model needs to decide to transit from feature map A to feature B, for this, it has three options (SkipConnect, Conv3x3, MaxPool2d), these options are called TransformationCandidates, there can be multiple candidates available in the model which are defined by the developer in the beginning. DARTS model uses all these candidates and generates feature maps from all the candidates, now all the generated feature maps are combined to form the final feature map which is done by performing weighted summation using the continuous model variable alpha which is trained with parameter weights together with gradient descent and used in softmax function written above. Therefore, architecture and parameter weights are controlled together.
 
-<center><img src="./Images/Methodology Image 3.png" width="480px"></center>
+<p align="center">
+  <img width="600" height="200" src="./Images/Methodology Image 3.png">
+</p>
+
 
 **Mathematical Transformations performed in DARTS:**
 
