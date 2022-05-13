@@ -7,11 +7,11 @@ There also develops a need of building an optimized model for the dataset. A lot
 
 To get the best model for some dataset, hyperparameter tuning is being taken care of. There becomes a need for optimized architectures such that there is no overfitting on the training dataset. But to come up with the best model manually becomes difficult. It becomes computationally expensive to find the optimized architecture. So, for solving this problem Neural Architecture Search is used. NAS automates the process of finding the best architecture using the search strategy in the search space. There are three important terms for Neural Architecture Search:
 
-**Search Space:**
+• **Search Space:**
 To build a valid network, the network operations and how they are connected so as to construct an optimized design for the model defines the search space.   
-**Search strategy:**
+• **Search strategy:**
 The search space is explored in the search strategy to generate the child models which generate high performance.\
-**Performance Estimation:**
+• **Performance Estimation:**
 As the name suggests, this measure helps to check or predict the performance of the child models obtained.\
 There can be multiple architectures possible from a large search space.
 
