@@ -15,6 +15,12 @@ The search space is explored in the search strategy to generate the child models
 As the name suggests, this measure helps to check or predict the performance of the child models obtained.\
 There can be multiple architectures possible from a large search space.
 
+<p align="center">
+  <img width="600" height="200" src="./Images/Figure 1.png">
+</p>
+<p align = "center">
+</p>
+
 For search space NAS uses cells of two types in constructing the network.
 
 • The first one is the **Normal cell** in which there is the same dimension provided for input and output feature map.\
