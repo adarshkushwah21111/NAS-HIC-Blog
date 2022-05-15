@@ -31,6 +31,19 @@ The NAS works on the principle to get the analysis of every child model's perfor
 **Is it time consuming to automate the process of finding the optimized Architecture?**\
  Due to large search space, it takes around 28-30 GPU days for training of the model and finding and tuning the hyperparameters using reinforcement learning. But with the help of Differentiable Architecture Search(DARTS), it takes around 2-3 GPU days for  training the model. 
 
+**DARTS**
+
+Close to other AutoML/NAS(Neural Architecture Search) approaches that utilize Reinforcement Learning, Bayes Optimization, or Evolutionary calculation. DARTS uses a gradient-based method where search space is relaxed to be continuous rather than looking over a discrete set of candidate architectures. Then jointly optimize architecture parameters α and weight parameters w that comes under bi-level optimization.
+
+"The data efficiency of gradient-based optimization, as opposed to inefficient black-box search, allows DARTS to achieve competitive performance with state of the art using orders of magnitude fess computation resources.
+We introduce a novel algorithm for differentiable network architecture search based on bilevel optimization, which applies to both convolutional and recurrent architectures." — source: DARTS Paper
+
+Prior strategies utilized reinforcement learning and required many computational resources with around 2000 GPU days and 3150 GPU days for evolutionary calculation. DARTS diminished the search time to 2-3 GPU days which is exceptional. This optimization is reached by relaxing the search space. Searching over a discrete set has the restriction that the model must be trained on a specific configuration before considering the subsequent arrangement, thus more time-consuming.
+
+**Dataset Introduction**
+
+The proposed 11K Hands dataset is publically available and comprises 11,076 hand images of 190 subjects aged between 18 and 75 years. Each picture has 1600 × 1200 pixels. Each subject was requested to arbitrarily open and close his fingers from the right and left hands to get variety in caught hands shapes. Each hand was captured from both dorsal and palmar sides. The metadata of each hand image incorporates subject ID, orientation data, age, and hand skin tone. 
+Likewise, each metadata record has a set of information of the captured hand picture, like right-or left-hand, hand side (dorsal or palmar), and logical indicators alluding to whether the hand picture contains accessories, asymmetry, or nail polish.
 
 **Dataset Modification and Pipelinging with Pytorch:**
 
@@ -163,6 +176,10 @@ Sampling a small part of the super-network to reduce the redundancy in exploring
 Perform operation search in a subset of channels while bypassing the held-out part (non-sampled channels). Furthermore, edge normalization (some parameters are added and uncertainty in search reduces) is developed to maintain the consistency of edge selection based on channel sampling with the architectural parameters for edges.
 Due to reduced memory cost using above PCDARTS can be used on a larger batch size compared to DARTS and PDARTS.
 
+**Future work**
+
+This work considers 11K hands dataset images, but the same methodology also applies to other image datasets. 
+We envision extending this work to make it constrained to incorporate resource constraints such as limited memory and computation power (measuring in floating-point operations). The present work finds applications in biometric identification, medical imaging, industrial object identification, and several others. The proposed methodology lays the foundation for subsequent research and we envision applying our approach in one or more such applications in the future.
 
 **Conclusion**
 
