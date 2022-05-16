@@ -219,7 +219,6 @@ With technological advancement, the Neural Architecture Search will be growing a
 
 ## References
 <a id="1">[1]</a> 
-DARTS: Differentiable Architecture Search -
-Hanxiao Liu, Karen Simonyan, Yiming Yang 
-(2019)
+Liu, Hanxiao, Karen Simonyan, and Yiming Yang. “DARTS: Differentiable Architecture Search.” arXiv, April 23, 2019. https://doi.org/10.48550/arXiv.1806.09055.
+
 
