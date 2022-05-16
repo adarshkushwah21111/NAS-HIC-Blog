@@ -49,14 +49,12 @@ We introduce a novel algorithm for differentiable network architecture search ba
 
 
 \(
-\begin{align}
-\begin{split}
+
 \begin{gathered}
 \nabla_{\alpha} \mathcal{L}_{v a \ell}\left(\omega^{*}(\alpha), \alpha\right) \\
 \approx \nabla_{\alpha} \mathcal{L}_{v a \ell}\left(\omega-\xi \nabla_{\omega} \mathcal{L}_{t \operatorname{rain}}(\omega, \alpha), \alpha\right)
 \end{gathered} 
-\end{split}
-\end{align}
+
 \)
 
 
