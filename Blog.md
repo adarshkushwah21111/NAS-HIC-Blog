@@ -48,17 +48,21 @@ We introduce a novel algorithm for differentiable network architecture search ba
 
 
 
-\(
 
-\begin{gathered}
+$$\begin{gathered}
 \nabla_{\alpha} \mathcal{L}_{v a \ell}\left(\omega^{*}(\alpha), \alpha\right) \\
 \approx \nabla_{\alpha} \mathcal{L}_{v a \ell}\left(\omega-\xi \nabla_{\omega} \mathcal{L}_{t \operatorname{rain}}(\omega, \alpha), \alpha\right)
-\end{gathered} 
+\end{gathered}$$
 
+
+\(
+\begin{align}
+\begin{split}
+m_t &= \beta_1 m_{t-1} + (1 - \beta_1) g_t \\
+v_t &= \beta_2 v_{t-1} + (1 - \beta_2) g_t^2
+\end{split}
+\end{align}
 \)
-
-
-
 
 
 After discussing how the process defines the searched architecture, the next aim is to find the optimal operation for the model.
