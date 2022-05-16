@@ -35,6 +35,8 @@ The NAS works on the principle to get the analysis of every child model's perfor
 
 Close to other AutoML/NAS(Neural Architecture Search) approaches that utilize Reinforcement Learning, Bayes Optimization, or Evolutionary calculation. DARTS uses a gradient-based method where search space is relaxed to be continuous rather than looking over a discrete set of candidate architectures. Then jointly optimize architecture parameters α and weight parameters w that comes under bi-level optimization.
 
+Prior strategies utilized reinforcement learning and required many computational resources with around 2000 GPU days and 3150 GPU days for evolutionary calculation. DARTS diminished the search time to 2-3 GPU days which is exceptional. This optimization is reached by relaxing the search space. Searching over a discrete set has the restriction that the model must be trained on a specific configuration before considering the subsequent arrangement, thus more time-consuming.
+
 "The data efficiency of gradient-based optimization, as opposed to inefficient black-box search, allows DARTS to achieve competitive performance with state of the art using orders of magnitude fess computation resources.
 We introduce a novel algorithm for differentiable network architecture search based on bilevel optimization, which applies to both convolutional and recurrent architectures." — source: DARTS Paper
 
@@ -47,8 +49,23 @@ We introduce a novel algorithm for differentiable network architecture search ba
 After discussing how the process defines the searched architecture, the next aim is to find the optimal operation for the model.
 Given the optimized weights on the training set, the goal is to calculate alphas to minimize the validation loss. 
 
+<p align="center">
+  <img width="300" height="100" src="./Images/formula2a.png">
+</p>
+<p align = "center">
+</p>
 
-Prior strategies utilized reinforcement learning and required many computational resources with around 2000 GPU days and 3150 GPU days for evolutionary calculation. DARTS diminished the search time to 2-3 GPU days which is exceptional. This optimization is reached by relaxing the search space. Searching over a discrete set has the restriction that the model must be trained on a specific configuration before considering the subsequent arrangement, thus more time-consuming.
+Due to expensive inner optimization, evaluating architecture gradient can be prohibitive. For this, a reasonably simple approximation scheme is proposed as below, 
+
+<p align="center">
+  <img width="300" height="100" src="./Images/formula3a.png">
+</p>
+<p align = "center">
+</p>
+
+Where ω denotes the current weights maintained by the algorithm, and 𝜉 is the learning rate for a step of inner optimization. 
+Optimizing ω* till convergence leads to two loop of optimization, so instead of solving inner optimization  completely, idea is to use just one training step.
+
 
 **Dataset Introduction**
 
