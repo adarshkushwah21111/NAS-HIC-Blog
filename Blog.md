@@ -46,6 +46,23 @@ We introduce a novel algorithm for differentiable network architecture search ba
 <p align = "center">
 </p>
 
+
+
+\(
+\begin{align}
+\begin{split}
+\begin{gathered}
+\nabla_{\alpha} \mathcal{L}_{v a \ell}\left(\omega^{*}(\alpha), \alpha\right) \\
+\approx \nabla_{\alpha} \mathcal{L}_{v a \ell}\left(\omega-\xi \nabla_{\omega} \mathcal{L}_{t \operatorname{rain}}(\omega, \alpha), \alpha\right)
+\end{gathered} 
+\end{split}
+\end{align}
+\)
+
+
+
+
+
 After discussing how the process defines the searched architecture, the next aim is to find the optimal operation for the model.
 Given the optimized weights on the training set, the goal is to calculate alphas to minimize the validation loss. 
 
