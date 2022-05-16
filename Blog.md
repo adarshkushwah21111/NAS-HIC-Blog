@@ -104,10 +104,8 @@ Suppose the model needs to decide to transit from feature map A to feature B, fo
   <img width="600" height="200" src="./Images/Methodology Image 3.png">
 </p>
 <p align = "center">
-Figure 2: Feature Map transformation in DARTS,
- Source:Youtube(https://youtu.be/rztqT8RXyuI)
+Figure 2: Feature Map transformation in DARTS
 </p>
-
 <p align = "center">
 Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
@@ -150,8 +148,10 @@ Note: We are denoting alpha by a.
   <img width="400" height="200" src="./Images/Methodology Image 4.png">
 </p>
 <p align = "center">
-Figure 3: Baseline VGG Model,
- Source:Youtube(https://youtu.be/rztqT8RXyuI)
+Figure 3: Baseline VGG Model
+</p>
+<p align = "center">
+Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 **What is Block?**
@@ -161,7 +161,9 @@ Figure 3: Baseline VGG Model,
 </p>
 <p align = "center">
 Figure 4: Architecture of Block,
- Source:Youtube(https://youtu.be/rztqT8RXyuI)
+</p>
+<p align = "center">
+Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 **Inputs:** Can be previous cell’s output/ previous-previous cells output/ previous block’s output of the same cell. Operators: Can be 3x3/5x5/7x7 depth separable convolutions/ average pooling/max pooling Combination: Element wise addition.
@@ -173,7 +175,9 @@ Figure 4: Architecture of Block,
 </p>
 <p align = "center">
 Figure 5:CIFAR10 and Imagenet Architecture,
- Source:Youtube(https://youtu.be/rztqT8RXyuI)
+</p>
+<p align = "center">
+Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 **Notations:** \
@@ -196,7 +200,9 @@ Instead of landing in such a large search space from the beginning. Start with c
 </p>
 <p align = "center">
 Figure 6:Reduction of candidate operations and Depth in DARTS,
- Source:Youtube(https://youtu.be/rztqT8RXyuI)
+</p>
+<p align = "center">
+Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 **Search space regularisation:** 
