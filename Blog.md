@@ -38,6 +38,16 @@ Close to other AutoML/NAS(Neural Architecture Search) approaches that utilize Re
 "The data efficiency of gradient-based optimization, as opposed to inefficient black-box search, allows DARTS to achieve competitive performance with state of the art using orders of magnitude fess computation resources.
 We introduce a novel algorithm for differentiable network architecture search based on bilevel optimization, which applies to both convolutional and recurrent architectures." — source: DARTS Paper
 
+<p align="center">
+  <img width="300" height="100" src="./Images/formula1a.png">
+</p>
+<p align = "center">
+</p>
+
+After discussing how the process defines the searched architecture, the next aim is to find the optimal operation for the model.
+Given the optimized weights on the training set, the goal is to calculate alphas to minimize the validation loss. 
+
+
 Prior strategies utilized reinforcement learning and required many computational resources with around 2000 GPU days and 3150 GPU days for evolutionary calculation. DARTS diminished the search time to 2-3 GPU days which is exceptional. This optimization is reached by relaxing the search space. Searching over a discrete set has the restriction that the model must be trained on a specific configuration before considering the subsequent arrangement, thus more time-consuming.
 
 **Dataset Introduction**
