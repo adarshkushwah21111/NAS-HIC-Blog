@@ -103,7 +103,8 @@ Suppose the model needs to decide to transit from feature map A to feature B, fo
   <img width="600" height="200" src="./Images/Methodology Image 3.png">
 </p>
 <p align = "center">
-Figure 2: Feature Map transformation in DARTS
+Figure 2: Feature Map transformation in DARTS,
+ Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 
@@ -145,7 +146,8 @@ Note: We are denoting alpha by a.
   <img width="400" height="200" src="./Images/Methodology Image 4.png">
 </p>
 <p align = "center">
-Figure 3: Baseline VGG Model
+Figure 3: Baseline VGG Model,
+ Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 **What is Block?**
@@ -154,7 +156,8 @@ Figure 3: Baseline VGG Model
   <img width="300" height="200" src="./Images/Methodology Image 5.png">
 </p>
 <p align = "center">
-Figure 5: Architecture of Block
+Figure 4: Architecture of Block,
+ Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 **Inputs:** Can be previous cell’s output/ previous-previous cells output/ previous block’s output of the same cell. Operators: Can be 3x3/5x5/7x7 depth separable convolutions/ average pooling/max pooling Combination: Element wise addition.
@@ -165,7 +168,8 @@ Figure 5: Architecture of Block
   <img width="400" height="200" src="./Images/Methodology Image 6.png">
 </p>
 <p align = "center">
-Figure 6:CIFAR10 and Imagenet Architecture
+Figure 5:CIFAR10 and Imagenet Architecture,
+ Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 **Notations:** \
@@ -187,7 +191,8 @@ Instead of landing in such a large search space from the beginning. Start with c
   <img width="400" height="200" src="./Images/Methodology Image 7.png">
 </p>
 <p align = "center">
-Figure 6:Reduction of candidate operations and Depth in DARTS
+Figure 6:Reduction of candidate operations and Depth in DARTS,
+ Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 **Search space regularisation:** 
@@ -214,7 +219,7 @@ With technological advancement, the Neural Architecture Search will be growing a
 
 ## References
 <a id="1">[1]</a> 
-Dijkstra, E. W. (1968). 
-Go to statement considered harmful. 
-Communications of the ACM, 11(3), 147-148.
+DARTS: Differentiable Architecture Search -
+Hanxiao Liu, Karen Simonyan, Yiming Yang 
+(2019)
 
