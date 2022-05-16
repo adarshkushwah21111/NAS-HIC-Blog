@@ -66,6 +66,7 @@ Due to expensive inner optimization, evaluating architecture gradient can be pro
 Where ω denotes the current weights maintained by the algorithm, and 𝜉 is the learning rate for a step of inner optimization. 
 Optimizing ω* till convergence leads to two loop of optimization, so instead of solving inner optimization  completely, idea is to use just one training step.
 
+The detailed explanation of above mathematical equations are given in Methodology section.
 
 **Dataset Introduction**
 
