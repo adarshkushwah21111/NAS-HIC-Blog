@@ -160,7 +160,7 @@ Source:Youtube(https://youtu.be/rztqT8RXyuI)
   <img width="300" height="200" src="./Images/Methodology Image 5.png">
 </p>
 <p align = "center">
-Figure 4: Architecture of Block,
+Figure 4: Architecture of Block
 </p>
 <p align = "center">
 Source:Youtube(https://youtu.be/rztqT8RXyuI)
@@ -174,7 +174,7 @@ Source:Youtube(https://youtu.be/rztqT8RXyuI)
   <img width="400" height="200" src="./Images/Methodology Image 6.png">
 </p>
 <p align = "center">
-Figure 5:CIFAR10 and Imagenet Architecture,
+Figure 5:CIFAR10 and Imagenet Architecture
 </p>
 <p align = "center">
 Source:Youtube(https://youtu.be/rztqT8RXyuI)
@@ -199,7 +199,7 @@ Instead of landing in such a large search space from the beginning. Start with c
   <img width="400" height="200" src="./Images/Methodology Image 7.png">
 </p>
 <p align = "center">
-Figure 6:Reduction of candidate operations and Depth in DARTS,
+Figure 6:Reduction of candidate operations and Depth in DARTS
 </p>
 <p align = "center">
 Source:Youtube(https://youtu.be/rztqT8RXyuI)
