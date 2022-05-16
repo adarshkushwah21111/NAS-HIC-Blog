@@ -108,6 +108,9 @@ Figure 2: Feature Map transformation in DARTS,
  Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
+<p align = "center">
+Source:Youtube(https://youtu.be/rztqT8RXyuI)
+</p>
 
 **Mathematical Transformations performed in DARTS:**
 
