@@ -118,8 +118,7 @@ Suppose the model needs to decide to transit from feature map A to feature B, fo
 Figure 2: Feature Map transformation in DARTS
 </p>
 <p align = "center">
-Source:Youtube(https://youtu.be/rztqT8RXyuI)
-</p>
+
 
 ## Mathematical Transformations performed in DARTS
 
@@ -156,13 +155,10 @@ Note: We are denoting alpha by a.
 ## Baseline Architecture of DARTS
 
 <p align="center">
-  <img width="480" height="380" src="./Images/Methodology Image 4 Final.png">
+  <img width="480" height="380" src="./Images/Methodology Image 4 Final 2.png">
 </p>
 <p align = "center">
 Figure 3: Baseline VGG Model
-</p>
-<p align = "center">
-Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 ## What is Block?
@@ -172,9 +168,6 @@ Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 <p align = "center">
 Figure 4: Architecture of Block
-</p>
-<p align = "center">
-Source:Youtube(https://youtu.be/rztqT8RXyuI)
 </p>
 
 ## Inputs
@@ -187,10 +180,7 @@ Comprises of blocks
   <img width="1000" height="500" src="./Images/Methodology Image 6.png">
 </p>
 <p align = "center">
-Figure 5:CIFAR10 and Imagenet Architecture
-</p>
-<p align = "center">
-Source:Youtube(https://youtu.be/rztqT8RXyuI)
+Figure 5: CIFAR10 and Imagenet Architecture
 </p>
 
 ## Notations
@@ -212,10 +202,7 @@ Instead of landing in such a large search space from the beginning. Start with c
   <img width="1500" height="500" src="./Images/Methodology Image 7 Final.png">
 </p>
 <p align = "center">
-Figure 6:Reduction of candidate operations and Depth in DARTS
-</p>
-<p align = "center">
-Source:Youtube(https://youtu.be/rztqT8RXyuI)
+Figure 6: Reduction of candidate operations and Depth in DARTS
 </p>
 
 ## Search space regularisation
