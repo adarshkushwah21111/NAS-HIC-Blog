@@ -98,7 +98,7 @@ Note: annotations_file is the path to the CSV file containing the ids of each im
 Instead of selecting the most appropriate operation at the first layer, the DARTS model applies all possible previous state paths to the current state. It seems like it should have taken a considerable amount of time, like in case of reinforcement and evolutionary learning, but that’s not true; the DARTS model uses gradient descent with a softmax function at each node to decide which path is the most appropriate till that node. Therefore, after doing this operation at each node, we will get the best architecture at the end.
 
 <p align="center">
-  <img width="400" height="200" src="./Images/Methodology Image 2.png">
+  <img width="600" height="270" src="./Images/Methodology Image 2.png">
 </p>
 <p align = "center">
 </p>
@@ -112,7 +112,7 @@ Figure 1: An overview of DARTS: (a) Operations on the edges are initially unknow
 Suppose the model needs to decide to transit from feature map A to feature B, for this, it has three options (SkipConnect, Conv3x3, MaxPool2d), these options are called TransformationCandidates, there can be multiple candidates available in the model which are defined by the developer in the beginning. DARTS model uses all these candidates and generates feature maps from all the candidates, now all the generated feature maps are combined to form the final feature map which is done by performing weighted summation using the continuous model variable alpha which is trained with parameter weights together with gradient descent and used in softmax function written above. Therefore, architecture and parameter weights are controlled together.
 
 <p align="center">
-  <img width="600" height="200" src="./Images/Methodology Image 3.png">
+  <img width="850" height="300" src="./Images/Methodology Image 3.png">
 </p>
 <p align = "center">
 Figure 2: Feature Map transformation in DARTS
