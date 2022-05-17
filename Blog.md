@@ -40,41 +40,17 @@ Prior strategies utilized reinforcement learning and required many computational
 "The data efficiency of gradient-based optimization, as opposed to inefficient black-box search, allows DARTS to achieve competitive performance with state of the art using orders of magnitude fess computation resources.
 We introduce a novel algorithm for differentiable network architecture search based on bilevel optimization, which applies to both convolutional and recurrent architectures." — source: DARTS Paper
 
-![first equation](https://latex.codecogs.com/gif.latex?%5Cbar%7Bo%7D%5E%7B%28i%2C%20j%29%7D%28x%29%3D%5Csum_%7Bo%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Cfrac%7B%5Cexp%20%5Cleft%28%5Calpha_%7Bo%7D%5E%7B%28i%2C%20j%29%7D%5Cright%29%7D%7B%5Csum_%7Bo%5E%7B%5Cprime%7D%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Cexp%20%5Cleft%28%5Calpha_%7Bo%5E%7B%5Cprime%7D%7D%5E%7B%28i%2C%20j%29%7D%5Cright%29%7D%20o%28x%29)
 
-<p align="center">
-  <img width="300" height="100" src="./Images/formula1a.png">
-</p>
-<p align = "center">
-</p>
-
-
-
-<p style="text-align:center">\(<br>
-\begin{align}<br>
-\begin{split}<br>
-m_t &amp;= \beta_1 m_{t-1} + (1 - \beta_1) g_t \\<br>
-v_t &amp;= \beta_2 v_{t-1} + (1 - \beta_2) g_t^2<br>
-\end{split}<br>
-\end{align}<br>
-\)</p>
+![Hello](https://latex.codecogs.com/gif.latex?%5Cbar%7Bo%7D%5E%7B%28i%2C%20j%29%7D%28x%29%3D%5Csum_%7Bo%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Cfrac%7B%5Cexp%20%5Cleft%28%5Calpha_%7Bo%7D%5E%7B%28i%2C%20j%29%7D%5Cright%29%7D%7B%5Csum_%7Bo%5E%7B%5Cprime%7D%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Cexp%20%5Cleft%28%5Calpha_%7Bo%5E%7B%5Cprime%7D%7D%5E%7B%28i%2C%20j%29%7D%5Cright%29%7D%20o%28x%29)
 
 After discussing how the process defines the searched architecture, the next aim is to find the optimal operation for the model.
 Given the optimized weights on the training set, the goal is to calculate alphas to minimize the validation loss. 
 
-<p align="center">
-  <img width="300" height="100" src="./Images/formula2a.png">
-</p>
-<p align = "center">
-</p>
+![Hello](https://latex.codecogs.com/gif.latex?%5Cbegin%7Barray%7D%7Bll%7D%20%5Cmin%20_%7B%5Calpha%7D%20%26%20%5Cmathcal%7BL%7D_%7B%5Ctext%20%7Bval%20%7D%7D%5Cleft%28w%5E%7B*%7D%28%5Calpha%29%2C%20%5Calpha%5Cright%29%20%5C%5C%20%5Ctext%20%7B%20s.t.%20%7D%20%26%20w%5E%7B*%7D%28%5Calpha%29%3D%5Coperatorname%7Bargmin%7D_%7Bw%7D%20%5Cmathcal%7BL%7D_%7Bt%20%5Coperatorname%7Brain%7D%7D%28w%2C%20%5Calpha%29%20%5Cend%7Barray%7D)
 
 Due to expensive inner optimization, evaluating architecture gradient can be prohibitive. For this, a reasonably simple approximation scheme is proposed as below, 
 
-<p align="center">
-  <img width="300" height="100" src="./Images/formula3a.png">
-</p>
-<p align = "center">
-</p>
+![Hello](https://latex.codecogs.com/gif.latex?%5Cbegin%7Baligned%7D%20%26%20%5Cnabla_%7B%5Calpha%7D%20%5Cmathcal%7BL%7D_%7B%5Ctext%20%7Bval%20%7D%7D%5Cleft%28w%5E%7B*%7D%28%5Calpha%29%2C%20%5Calpha%5Cright%29%20%5C%5C%20%5Capprox%20%26%20%5Cnabla_%7B%5Calpha%7D%20%5Cmathcal%7BL%7D_%7B%5Ctext%20%7Bval%20%7D%7D%5Cleft%28w-%5Cxi%20%5Cnabla_%7Bw%7D%20%5Cmathcal%7BL%7D_%7B%5Ctext%20%7Btrain%20%7D%7D%28w%2C%20%5Calpha%29%2C%20%5Calpha%5Cright%29%20%5Cend%7Baligned%7D)
 
 Where ω denotes the current weights maintained by the algorithm, and 𝜉 is the learning rate for a step of inner optimization. 
 Optimizing ω* till convergence leads to two loop of optimization, so instead of solving inner optimization  completely, idea is to use just one training step.
@@ -127,21 +103,15 @@ Figure 2: Feature Map transformation in DARTS
 Each node x (p) is a latent representation and each directed edge (p, k) is associated with some operation o (p, k) that transforms x(p).
 Evaluation of each node is based on its predecessors.
 
-<p align="center">
-  <img width="400" height="100" src="./Images/4.jpg">
-</p>
-
+![Hello](https://latex.codecogs.com/gif.latex?x%5E%7B%28K%29%7D%3D%5Csum_%7Bp%3CK%7D%20O%5E%7B%28p%2C%20K%29%7D%5Cleft%28x%5E%7B%28p%29%7D%5Cright%29)
+  
 Let O be a set of candidate operations where each operation represents some function o() to be applied to x(p). To make the search space continuous, we replace the categorical choice of operation to a softmax over all possible operations:
 
-<p align="center">
-  <img width="400" height="100" src="./Images/3.jpg">
-</p>
+![Hello](https://latex.codecogs.com/gif.latex?%5Cbar%7Bo%7D%5E%7B%28i%2C%20j%29%7D%28x%29%3D%5Csum_%7Bo%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Cfrac%7B%5Cexp%20%5Cleft%28%5Calpha_%7Bo%7D%5E%7B%28i%2C%20j%29%7D%5Cright%29%7D%7B%5Csum_%7Bo%5E%7B%5Cprime%7D%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Cexp%20%5Cleft%28%5Calpha_%7Bo%7D%5E%7B%28i%2C%20j%29%7D%5Cright%29%7D%20o%28x%29)
 
 where the operation of mixing weights for a pair of nodes (p; k) is parameterized by a vector alpha(i, j) of dimension |O|. Now the next task is to reduce to learning a set of continuous variables (alphas). After finishing this search, a discrete architecture can be evaluated by replacing each mixed operation o- (i, j) with the most likely operation:
 
-<p align="center">
-  <img width="400" height="100" src="./Images/2.jpg">
-</p>
+![Hello](https://latex.codecogs.com/gif.latex?o%5E%7B%28i%2C%20j%29%7D%3D%5Coperatorname%7Bargmax%7D%7Bo%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Calpha%7Bo%7D%5E%7B%28i%2C%20j%29%7D)
 
 Now, the model will try to learn the optimized values of alpha and weight w for all the mixed operations. DARTS does this with the help of gradient descent by minimizing the validation loss.
 
@@ -150,9 +120,7 @@ Now, the model will try to learn the optimized values of alpha and weight w for 
 Denote by Ltrain and Lval the training and the validation loss, respectively. Both losses are determined not only by the architecture a, but also the weights w in the network. The goal for architecture search is to find * that minimizes the validation loss Lval(w*, a*). where the weights w* associated with the architecture are obtained by minimizing the training loss w* = argmin w Ltrain,qi,(w,a*). 
 Note: We are denoting alpha by a.
 
-<p align="center">
-  <img width="400" height="100" src="./Images/1.jpg">
-</p>
+![Hello](https://latex.codecogs.com/gif.latex?%5Cbegin%7Barray%7D%7Bl%7D%20%5Cmin%20%7B%5Calpha%7D%20%5Cmathcal%7BL%7D%7Bv%20a%20l%7D%5Cleft%28w%5E%7B*%7D%28%5Calpha%29%2C%20%5Calpha%5Cright%29%5C%5C%20%5Ctext%20%7B%20s.t.%20%7D%20%5Cquad%20w%5E%7B*%7D%28%5Calpha%29%3D%5Coperatorname%7Bargmin%7D%7Bw%7D%20%5Cmathcal%7BL%7D%7Bt%20r%7D%20%5Cmathcal%7Br%7D_%7Ba%20i%20n%7D%28w%2C%20%5Calpha%29%20%5Cend%7Barray%7D)
 
 ## Baseline Architecture of DARTS
 
