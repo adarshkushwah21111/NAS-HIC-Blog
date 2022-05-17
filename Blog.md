@@ -201,4 +201,6 @@ With technological advancement, the Neural Architecture Search will be growing a
 <a id="1">[1]</a> 
 Liu, Hanxiao, Karen Simonyan, and Yiming Yang. “DARTS: Differentiable Architecture Search.” arXiv, April 23, 2019. https://doi.org/10.48550/arXiv.1806.09055.
 
+<a id="2">[2]</a> 
+Shivam Kaushik, I. N. (2020). Intuitive Explanation of Differentiable Architecture Search (DARTS). Understanding how DARTS work! https://towardsdatascience.com/intuitive-explanation-of-differentiable-architecture-search-darts-692bdadcc69c
 
