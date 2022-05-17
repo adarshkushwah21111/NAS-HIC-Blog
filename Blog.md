@@ -156,7 +156,7 @@ Note: We are denoting alpha by a.
 **Baseline Architecture of DARTS:**
 
 <p align="center">
-  <img width="400" height="200" src="./Images/Methodology Image 4.png">
+  <img width="480" height="380" src="./Images/Methodology Image 4 Final.png">
 </p>
 <p align = "center">
 Figure 3: Baseline VGG Model
@@ -168,7 +168,7 @@ Source:Youtube(https://youtu.be/rztqT8RXyuI)
 **What is Block?**
 
 <p align="center">
-  <img width="300" height="200" src="./Images/Methodology Image 5.png">
+  <img width="1000" height="500" src="./Images/Methodology Image 5.png">
 </p>
 <p align = "center">
 Figure 4: Architecture of Block
@@ -182,7 +182,7 @@ Source:Youtube(https://youtu.be/rztqT8RXyuI)
 **Cell:** Comprises of blocks
 
 <p align="center">
-  <img width="400" height="200" src="./Images/Methodology Image 6.png">
+  <img width="1000" height="500" src="./Images/Methodology Image 6.png">
 </p>
 <p align = "center">
 Figure 5:CIFAR10 and Imagenet Architecture
@@ -207,7 +207,7 @@ Instead of landing in such a large search space from the beginning. Start with c
 **Candidate operations get reduced and the depth of the search network increases:**
 
 <p align="center">
-  <img width="400" height="200" src="./Images/Methodology Image 7.png">
+  <img width="1500" height="500" src="./Images/Methodology Image 7 Final.png">
 </p>
 <p align = "center">
 Figure 6:Reduction of candidate operations and Depth in DARTS
