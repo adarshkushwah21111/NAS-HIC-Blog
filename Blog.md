@@ -40,6 +40,8 @@ Prior strategies utilized reinforcement learning and required many computational
 "The data efficiency of gradient-based optimization, as opposed to inefficient black-box search, allows DARTS to achieve competitive performance with state of the art using orders of magnitude fess computation resources.
 We introduce a novel algorithm for differentiable network architecture search based on bilevel optimization, which applies to both convolutional and recurrent architectures." — source: DARTS Paper
 
+![first equation](https://latex.codecogs.com/gif.latex?%5Cbar%7Bo%7D%5E%7B%28i%2C%20j%29%7D%28x%29%3D%5Csum_%7Bo%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Cfrac%7B%5Cexp%20%5Cleft%28%5Calpha_%7Bo%7D%5E%7B%28i%2C%20j%29%7D%5Cright%29%7D%7B%5Csum_%7Bo%5E%7B%5Cprime%7D%20%5Cin%20%5Cmathcal%7BO%7D%7D%20%5Cexp%20%5Cleft%28%5Calpha_%7Bo%5E%7B%5Cprime%7D%7D%5E%7B%28i%2C%20j%29%7D%5Cright%29%7D%20o%28x%29)
+
 <p align="center">
   <img width="300" height="100" src="./Images/formula1a.png">
 </p>
