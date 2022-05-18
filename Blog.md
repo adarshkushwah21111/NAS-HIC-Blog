@@ -205,7 +205,6 @@ With technological advancement, the Neural Architecture Search will be growing a
 • Since, to get the best model will take a lot of computational resources so we switched to DARTS  which is less computationally expensive.\
 • The research paper on Skin Cancer Detection used Neural Architecture Search in which the researchers used DARTS, PDARTS, PCDARTS. PDARTS and PCDARTS are the upgraded versions of DARTS so as to overcome the challenges faced while using DARTS.\
 • There was learning from the DARTS model code implementation on the CIFAR-10, MNIST, Fashion-MNIST dataset. The images of CIFAR-10 dataset had horizontal flip and mnist and fashion mnist had a vertical flip. Transformations were further applied on the images. \
-• Got a deep insight of the Neural Architecture Search a
 
 
 ## References
