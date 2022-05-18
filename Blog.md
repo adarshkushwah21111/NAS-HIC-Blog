@@ -197,6 +197,17 @@ We envision extending this work to make it constrained to incorporate resource c
 
 With technological advancement, the Neural Architecture Search will be growing at a rapid pace. Using various deep learning models we have already observed that it takes a lot of time in training a large dataset using Reinforcement learning and evolutionary methods if the model tries for hyperparameter optimization to find the best model giving the highest accuracy. We have used Differentiable Architecture Structure (DARTS)  which takes only 2-3 GPU days for training the model for the large dataset. So, if automated ML is being used, then high computational costs can be saved and the optimized model is received. Using DARTS we are able to generate the most optimized model with less computational cost. The DARTS has been further upgraded to PDARTS and PCDARTS, the higher versions which provide even cheaper computational costs as compared to DARTS.
 
+## Learnings
+
+• The research paper of Hand Image Classification using Convolutional Neural Networks(CNN) on the 11K hands dataset helped us to learn in detail about various deep learning models like CNN, AlexNet, VGGNet.\
+• Learnt about the modified AlexNet architecture and how we can change and modify the hyperparameters for fine tuning the model.\
+• Neural Architecture Search  helps to find the best models by automating the process of fine tuning the model.\
+• Since, to get the best model will take a lot of computational resources so we switched to DARTS  which is less computationally expensive.\
+• The research paper on Skin Cancer Detection used Neural Architecture Search in which the researchers used DARTS, PDARTS, PCDARTS. PDARTS and PCDARTS are the upgraded versions of DARTS so as to overcome the challenges faced while using DARTS.\
+• There was learning from the DARTS model code implementation on the CIFAR-10, MNIST, Fashion-MNIST dataset. The images of CIFAR-10 dataset had horizontal flip and mnist and fashion mnist had a vertical flip. Transformations were further applied on the images. \
+• Got a deep insight of the Neural Architecture Search a
+
+
 ## References
 <a id="1">[1]</a> 
 Liu, Hanxiao, Karen Simonyan, and Yiming Yang. “DARTS: Differentiable Architecture Search.” arXiv, April 23, 2019. https://doi.org/10.48550/arXiv.1806.09055.
