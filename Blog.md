@@ -1,3 +1,8 @@
+<p align="center">
+  <img width="1100" height="200" src="./Images/nas-hic-poster.jpg">
+</p>
+<p align = "center">
+</p>
 
 ## ⚡ Introduction
 
