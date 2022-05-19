@@ -99,7 +99,7 @@ Figure 2: Feature Map transformation in DARTS
 <p align = "center">
 
 
-## Mathematical Transformations performed in DARTS
+## ⚡ Mathematical Transformations performed in DARTS
 
 Each node x (p) is a latent representation and each directed edge (p, k) is associated with some operation o (p, k) that transforms x(p).
 Evaluation of each node is based on its predecessors.
@@ -116,14 +116,14 @@ where the operation of mixing weights for a pair of nodes (p; k) is parameterize
 
 Now, the model will try to learn the optimized values of alpha and weight w for all the mixed operations. DARTS does this with the help of gradient descent by minimizing the validation loss.
 
-## Optimizing alpha and architecture weights w
+## ⚡ Optimizing alpha and architecture weights w
 
 Denote by Ltrain and Lval the training and the validation loss, respectively. Both losses are determined not only by the architecture a, but also the weights w in the network. The goal for architecture search is to find * that minimizes the validation loss Lval(w*, a*). where the weights w* associated with the architecture are obtained by minimizing the training loss w* = argmin w Ltrain,qi,(w,a*). 
 Note: We are denoting alpha by a.
 
 ![Hello](https://latex.codecogs.com/gif.latex?%5Cbegin%7Barray%7D%7Bl%7D%20%5Cmin%20%7B%5Calpha%7D%20%5Cmathcal%7BL%7D%7Bv%20a%20l%7D%5Cleft%28w%5E%7B*%7D%28%5Calpha%29%2C%20%5Calpha%5Cright%29%5C%5C%20%5Ctext%20%7B%20s.t.%20%7D%20%5Cquad%20w%5E%7B*%7D%28%5Calpha%29%3D%5Coperatorname%7Bargmin%7D%7Bw%7D%20%5Cmathcal%7BL%7D%7Bt%20r%7D%20%5Cmathcal%7Br%7D_%7Ba%20i%20n%7D%28w%2C%20%5Calpha%29%20%5Cend%7Barray%7D)
 
-## Baseline Architecture of DARTS
+## ⚡ Baseline Architecture of DARTS
 
 <p align="center">
   <img width="480" height="380" src="./Images/Methodology Image 4 Final 2.png">
@@ -176,7 +176,7 @@ Instead of landing in such a large search space from the beginning. Start with c
 Figure 6: Reduction of candidate operations and Depth in DARTS
 </p>
 
-## ⚡ Search space regularisation
+## ⚡ Search Space Regularisation
 
 Reduce the dominance of skip-connect during training and control the appearance of skip-connect during evaluation which reduces the overfitting.
 Still, the problem of computational overheads prevails to find the optimal structure and therefore switching to PCDARTS.
