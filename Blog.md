@@ -220,7 +220,7 @@ Liu, Hanxiao, Karen Simonyan, and Yiming Yang. “DARTS: Differentiable Architec
 <a id="2">[2]</a> 
 Shivam Kaushik, I. N. (2020). Intuitive Explanation of Differentiable Architecture Search (DARTS). Understanding how DARTS work! https://towardsdatascience.com/intuitive-explanation-of-differentiable-architecture-search-darts-692bdadcc69c
 
-## ⚡ Contact with Us
+## ⚡ Contact With Us
 
 <a href="https://www.linkedin.com/in/adarsh-singh-kushwah-59b119217/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <a href="https://www.instagram.com/g_prachi_/" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
