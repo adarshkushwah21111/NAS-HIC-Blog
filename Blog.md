@@ -73,8 +73,24 @@ Likewise, each metadata record has a set of information of the captured hand pic
 For the PyTorch execution, we want to pipeline the 11k hand's dataset with the Pytorch in light of the fact that PyTorch upholds and gives just some standard datasets like Cifar-10, Mnist, Fashion Mnist, and so forth. For this, we will convert the dataset into images and labels with which, we can proceed further in implementation.
 Below is the snapshot of the source code to perform the required operation:
 
-<center><img src="./Images/Methodology Image 1.png" width="480px"></center>
+```python
+class createPytorchDatasetObject(Dataset):
+    def __init__(self, annotations_file, img_dir, transform=None, target_transform=None):
+        self.img_labels = pd.read_csv(annotations_file)
+        self.img_dir = img_dir
+        self.transform = transform
+        self.target_transform = target_transform
 
+    def __len__(self):
+        return len(self.img_labels)
+
+    def __getitem__(self, idx):
+        img_path = os.path.join(self.img_dir, str(self.img_labels.iloc[idx, 0]))
+        img_path = img_path + '.jpg'
+        image = read_image(img_path)
+        label = self.img_labels.iloc[idx, 0]
+        return image, label
+```
 Note: annotations_file is the path to the CSV file containing the ids of each image of the 11k hand's dataset. Img_dir is the path to the folder in which all the corresponding images of the 11k hands are present.
 
 ## ⚡ Methodology
